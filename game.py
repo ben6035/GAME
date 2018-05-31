@@ -1122,6 +1122,7 @@ def main():
     title_text = Text(title_font, SCREEN_WIDTH / 2, SCREEN_HEIGHT/3, "GAME BOY", True)
     op_screen = Text(font2, SCREEN_WIDTH/2, SCREEN_HEIGHT * 1/2, "ARROW KEYS to move", False)
     op_screen_2 = Text(font2, SCREEN_WIDTH / 2, SCREEN_HEIGHT * 1 / 2 + 50, "SPACE to interact", False)
+    op_screen_3 = Text (font2, SCREEN_WIDTH / 2, SCREEN_HEIGHT * 1/2 + 100 , "UP to jump", False)
     end_screen = Text(font1, SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, "YOU WIN!", True)
 
     # Create Objects
@@ -1142,7 +1143,7 @@ def main():
 
     #adding objects
 
-    text_group.add(title_text, op_screen, op_screen_2)
+    text_group.add(title_text, op_screen, op_screen_2, op_screen_3)
     flash_group.add(op_screen)
     end_text.add(end_screen)
     ship_group.add(alpha)
